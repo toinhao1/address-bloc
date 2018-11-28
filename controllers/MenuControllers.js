@@ -15,6 +15,7 @@ module.exports = class MenuController {
       }
     ];
     this.contacts = [];
+    this.reminders = '';
   }
 
   main() {
@@ -54,6 +55,9 @@ module.exports = class MenuController {
   }
   getContactCount() {
     return this.contacts.length;
+  }
+  remindMe() {
+    return this.reminders;
   }
   getDate() {
     this.clear();
